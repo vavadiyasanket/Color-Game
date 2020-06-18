@@ -1,0 +1,135 @@
+body{
+	background-color: #232323;
+	margin: 0;
+}
+
+.square{
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background-color 1.0s;
+	-webkit-transition: background-color 1.0s;
+	-moz-transition: background-color 1.0s;
+}
+
+#container{
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 2% 0;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-family: Courier;
+	font-weight: normal;
+	font-size: 220%;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 1.1;
+	/*background: steelblue;*/
+	padding: 25px 0;
+	background-image: linear-gradient(to right, rgba(0,100,100,0.5), rgba(3,211,252,1));
+}
+
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+}
+
+.selected{
+	color: white;
+	background-color: steelblue;
+	background-image: linear-gradient(to right, rgba(3,211,252,0), rgba(3,211,252,1));
+}
+
+#head{
+	font-size: 80px;
+}
+
+button{
+	text-transform: uppercase;
+	background: none;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	border: none;
+	font-size: inherit;
+	letter-spacing: 1px;
+	transition: all 2.0s;
+	-webkit-transition: all 2.0s;
+	-moz-transition: all 2.0s;
+}
+
+button:hover{
+	color: white;
+	background-color: steelblue; 
+}
+
+/*#massege{
+	display: inline-block;
+	width: 20%;
+	font-family: Courier;
+	font-size: inherit;
+	transition: background-color 0.6s;
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+}
+
+#message:hover{
+	color: #55eeaa;
+}*/
+
+
+
+
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  font-family: calibri;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
